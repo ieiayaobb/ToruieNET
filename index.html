@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <title>ToruieNET</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/echarts-all.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/pie' // 使用柱状图就加载pie模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('pie'));
+
+                var labelTop = {
+                    normal : {
+                        label : {
+                            show : true,
+                            position : 'center',
+                            formatter : '{b}',
+                            textStyle: {
+                                baseline : 'bottom'
+                            }
+                        },
+                        labelLine : {
+                            show : false
+                        }
+                    }
+                };
+                var labelFromatter = {
+                    normal : {
+                        label : {
+                            formatter : function (params){
+                                return 100 - params.value + '%'
+                            },
+                            textStyle: {
+                                baseline : 'top'
+                            }
+                        }
+                    },
+                }
+                var labelBottom = {
+                    normal : {
+                        color: '#ccc',
+                        label : {
+                            show : true,
+                            position : 'center'
+                        },
+                        labelLine : {
+                            show : false
+                        }
+                    },
+                    emphasis: {
+                        color: 'rgba(0,0,0,0)'
+                    }
+                };
+                var radius = [40, 55];
+                option = {
+                    legend: {
+                        x : 'left',
+                        y : 'top',
+                        data:[
+                        ]
+                    },
+                    toolbox: {
+                        show : false,
+                        feature : {
+                            dataView : {show: true, readOnly: false},
+                            magicType : {
+                                show: true,
+                                type: ['pie', 'funnel'],
+                                option: {
+                                    funnel: {
+                                        width: '20%',
+                                        height: '30%',
+                                        itemStyle : {
+                                            normal : {
+                                                label : {
+                                                    formatter : function (params){
+                                                        return 'other\n' + params.value + '%\n'
+                                                    },
+                                                    textStyle: {
+                                                        baseline : 'middle'
+                                                    }
+                                                }
+                                            },
+                                        }
+                                    }
+                                }
+                            },
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    series : [
+                        {
+                            type : 'pie',
+                            center : ['20%', '50%'],
+                            radius : radius,
+                            y: '55%',   // for funnel
+                            x:'40%', // for funnel
+                            itemStyle : labelFromatter,
+                            data : [
+                                {name:'other', value:78, itemStyle : labelBottom},
+                                {name:'Messenger', value:22,itemStyle : labelTop}
+                            ]
+                        },
+                        {
+                            type : 'pie',
+                            center : ['50%', '50%'],
+                            radius : radius,
+                            y: '55%',   // for funnel
+                            x:'60%', // for funnel
+                            itemStyle : labelFromatter,
+                            data : [
+                                {name:'other', value:83, itemStyle : labelBottom},
+                                {name:'Whatsapp', value:17,itemStyle : labelTop}
+                            ]
+                        },
+                        {
+                            type : 'pie',
+                            center : ['80%', '50%'],
+                            radius : radius,
+                            y: '55%',   // for funnel
+                            x:'80%', // for funnel
+                            itemStyle : labelFromatter,
+                            data : [
+                                {name:'other', value:89, itemStyle : labelBottom},
+                                {name:'Instagram', value:11,itemStyle : labelTop}
+                            ]
+                        }
+                    ]
+                };
+
+                // 为echarts对象加载数据
+                myChart.setOption(option);
+            }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="main-wrap">
+        <div class="main">
+          <div class="title">
+            <span class="basic"></span>
+            <div class="more">
+              <span class="date">2014年4月29日</span>
+              <span class="time">19:00:30</span>
+              <span class="weather">多云转阴</span>
+              <span class="user">许伟</span>
+              <span class="profile">*</span>
+            </div>
+          </div>
+          <div class="show">
+            <div class="line large-line line-1">
+              <div class="panel-left"></div>
+              <div class="panel">
+                <div class="panel-title">
+                  <span class="panel-title-icon">*</span>
+                  <span class="panel-title-label">今日用电</span>
+                </div>
+                <div id="pie" class="panel-content" style="height:200px;"></div>
+              </div>
+              <div class="panel-right"></div>
+              <div class="panel-left"></div>
+              <div class="panel">
+                <div class="panel-title">
+                  <span class="panel-title-icon">*</span>
+                  <span class="panel-title-label">用电峰值</span>
+                </div>
+                <div class="panel-content"></div>
+              </div>
+              <div class="panel-right"></div>
+            </div>
+            <div class="line large-line line-2">
+              <div class="panel-left"></div>
+              <div class="panel">
+                <div class="panel-title">
+                  <span class="panel-title-icon">*</span>
+                  <span class="panel-title-label">当前人员数量<span class="panel-title-value">1218</span>人</span>
+                </div>
+                <div class="panel-content"></div>
+              </div>
+              <div class="panel-right"></div>
+              <div class="panel-left"></div>
+              <div class="panel">
+                <div class="panel-title">
+                  <span class="panel-title-icon">*</span>
+                  <span class="panel-title-label">当前温度</span>
+                </div>
+                <div class="panel-content"></div>
+              </div>
+              <div class="panel-right"></div>
+            </div>
+            <div class="line small-line line-3">
+              <div class="small-content">
+                <span class="icon"></span>
+                <div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="small-content">
+                <span class="icon"></span>
+                <div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="small-content">
+                <span class="icon"></span>
+                <div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="small-content">
+                <span class="icon"></span>
+                <div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                  <div class="info">
+                    <span class="info-label"></span>
+                    <span class="info-value"></span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- small-line end -->
+            <!-- <div class="line small-line line-4">
+              <div>
+                <span class="icon"></span>
+                <div class></div>
+              </div>
+              <div></div>
+            </div> -->
+            <div class="bar">
+              <div class="bar-left"></div>
+              <div class="bar-content"></div>
+              <div class="bar-right"></div>
+            </div>
+          </div>
+        </div><!-- main end -->
+      </div><!-- main-wrap end -->
+      <div class="left">
+        <div class="logo-panel">
+          <span class="sys-name">ToruieNET</span>
+          <span class="sub-name">Overview System</span>
+        </div>
+        <ul class="menu">
+          <li>
+            <span class="menu-icon"></span>
+            <span class="menu-label">主界面</span>
+          </li>
+          <li>
+            <span class="menu-icon"></span>
+            <span class="menu-label">组合安防管理</span>
+          </li>
+          <li>
+            <span class="menu-icon"></span>
+            <span class="menu-label">报警管理</span>
+          </li>
+          <li>
+            <div>
+              <span class="menu-icon"></span>
+              <span class="menu-label">运行管理</span>
+            </div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </li>
+          <li>
+            <span class="menu-icon"></span>
+            <span class="menu-label">设备检测</span>
+          </li>
+          <li>
+            <span class="menu-icon"></span>
+            <span class="menu-label">综合能效管理</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
