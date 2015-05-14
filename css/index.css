@@ -142,6 +142,10 @@
   background-repeat:repeat-x;
 }
 
+.panel-content{
+  height:250px;
+}
+
 .main .show .line .panel-left{
   margin-left:40px;
   float:left;
