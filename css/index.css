@@ -37,26 +37,43 @@
 
 .left>.menu>li{
   float:left;
-  width:150px;
-  height:30px;
-  padding:18px 0 0 20px;
-  border-radius:25px;
+  width:194px;
+
   color:#95d6f4;
   font-size:14px;
   font-weight:bold;
+  cursor:pointer;
 }
 
 .left>.menu>li .menu-icon{
   float:left;
+  margin:20px 0 0 20px;
 }
-.left>.menu>li .menu-label{
+.left>.menu>li>.menu-level-1{
   float:left;
-  margin:2px 0 0 15px;
+  width:194px;
+  height:58px;
+}
+.left>.menu>li>ul{
+  float:left;
+  width:195px;
+  height:229px;
+  background-image:url(../img/sub_menu.png)
 }
 
-.left>.menu>li:hover{
-  background-color:#0C61E1;
-  color:#fff;
+.menu-level-2{
+  float:left;
+  width:194px;
+  height:58px;
+}
+
+.left>.menu>li .menu-label{
+  float:left;
+  margin:20px 0 0 15px;
+}
+
+.left>.menu>li>.menu-level-1:hover{
+  background-image:url(../img/button_active.png)
 }
 
 .main-wrap{
