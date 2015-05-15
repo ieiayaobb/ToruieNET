@@ -1,0 +1,150 @@
+.main-wrap {
+    width:0;height:0;position:fixed;left:50%;right:50%;top:50%;bottom:50%;
+}
+.main{
+    background-image:url(../img/login/background.jpg);
+    background-repeat: no-repeat;
+    float:left;
+    width:1280px;
+    height:800px;
+    margin-left:-640px;
+    margin-top:-400px;
+
+}
+
+.logo{
+    background-image:url(../img/login/logo.png);
+    background-repeat: no-repeat;
+    float:left;
+    width: 503px;
+    height: 52px;
+    margin-top: 120px;
+    margin-left: 375px;
+}
+.content{
+    background-image:url(../img/login/formbg.png);
+    background-repeat: no-repeat;
+    float:left;
+    width: 734px;;
+    height: 495px;
+    margin-top: 30px;
+    margin-left: 273px;
+}
+
+/*::-webkit-input-placeholder { //WebKit browsers
+    color: #0C61E1;
+}
+:-moz-placeholder { //Mozilla Firefox 4 to 18
+    color: #0C61E1;
+}
+::-moz-placeholder { // Mozilla Firefox 19+
+    color: #0C61E1;
+}
+:-ms-input-placeholder { // Internet Explorer 10+
+    color: #0C61E1;
+}*/
+
+.name{
+    float:left;
+    width:462px;
+    height: 52px;
+    margin: 100px 0 0 136px;
+    background-image:url(../img/login/inputbg.png);
+}
+
+.password{
+    float:left;
+    width:462px;
+    height: 52px;
+    margin: 40px 0 0 136px;
+    background-image:url(../img/login/inputbg.png);
+}
+
+
+.icon{
+    float:left;
+    width: 36px;
+    height: 36px;
+    margin: 10px 20px 0 20px;
+}
+.name>.icon{
+    background-image:url(../img/login/usernameicon.png);
+}
+.password>.icon{
+    background-image:url(../img/login/passwordicon.png);
+}
+
+input[type=text]{
+    background-image:url(../img/login/apparent1px.png);
+    background-repeat: repeat-x;
+    width:380px;
+    height: 52px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.system{
+    float: left;
+    width:410px;
+    height: 28px;
+    margin: 34px 0 26px 160px;
+}
+
+
+
+.system input{
+    display: none;
+
+}
+
+.system .s1{
+    width: 200px;
+    height: 28px;
+    float: left;
+    background-image: url("../img/login/checked.png");
+    background-repeat: no-repeat;
+}
+
+.system .s1 .sysname{
+    font-size: 16px;
+    height: 28px;
+    margin: 5px 0 0 32px;
+    font-weight: bold;
+    color: #96a4af;
+   }
+.system .s2{
+    width: 200px;
+    height: 28px;
+    float: right;
+    background-image: url("../img/login/check.png");
+    background-repeat: no-repeat;
+}
+.system .s2 .sysname{
+    font-size: 16px;
+    height: 28px;
+    margin: 5px 0 0 32px;
+    font-weight: bold;
+    color: #96a4af;
+}
+
+
+
+
+
+
+
+.landed{
+    float: left;
+    width: 476px;
+    height: 69px;
+    margin-left: 136px;
+}
+
+.landed>input{
+    width: 476px;
+    height: 69px;
+    background-image: url("../img/login/landbutton.png");
+}
