@@ -1,3 +1,9 @@
+body{
+    min-width:734px;
+    overflow-x:scroll;
+
+
+}
 .main-wrap {
     width:0;height:0;position:fixed;left:50%;right:50%;top:50%;bottom:50%;
 }
@@ -31,18 +37,19 @@
     margin-left: 273px;
 }
 
-/*::-webkit-input-placeholder { //WebKit browsers
-    color: #0C61E1;
+
+::-webkit-input-placeholder { /*WebKit browsers*/
+    color: #758ba3;
 }
-:-moz-placeholder { //Mozilla Firefox 4 to 18
-    color: #0C61E1;
+:-moz-placeholder { /*Mozilla Firefox 4 to 18*/
+    color: #758ba3;
 }
-::-moz-placeholder { // Mozilla Firefox 19+
-    color: #0C61E1;
+::-moz-placeholder { /* Mozilla Firefox 19+*/
+    color: #758ba3;
 }
-:-ms-input-placeholder { // Internet Explorer 10+
-    color: #0C61E1;
-}*/
+:-ms-input-placeholder { /*Internet Explorer 10+*/
+    color: #758ba3;
+}
 
 .name{
     float:left;
@@ -74,7 +81,7 @@
     background-image:url(../img/login/passwordicon.png);
 }
 
-input[type=text]{
+input[type=text],input[type=password]{
     background-image:url(../img/login/apparent1px.png);
     background-repeat: repeat-x;
     width:380px;
@@ -84,6 +91,8 @@ input[type=text]{
     font-size: 20px;
     font-weight: bold;
     padding-top: 4px;
+    color:#0d8ed2;
+
 }
 
 .system{
@@ -106,6 +115,7 @@ input[type=text]{
     float: left;
     background-image: url("../img/login/checked.png");
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .system .s1 .sysname{
@@ -121,7 +131,9 @@ input[type=text]{
     float: right;
     background-image: url("../img/login/check.png");
     background-repeat: no-repeat;
+    cursor: pointer;
 }
+
 .system .s2 .sysname{
     font-size: 16px;
     height: 28px;
@@ -147,4 +159,5 @@ input[type=text]{
     width: 476px;
     height: 69px;
     background-image: url("../img/login/landbutton.png");
+    cursor: pointer;
 }
