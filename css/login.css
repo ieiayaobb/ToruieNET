@@ -31,18 +31,19 @@
     margin-left: 273px;
 }
 
-/*::-webkit-input-placeholder { //WebKit browsers
-    color: #0C61E1;
+
+::-webkit-input-placeholder { /*WebKit browsers*/
+    color: #758ba3;
 }
-:-moz-placeholder { //Mozilla Firefox 4 to 18
-    color: #0C61E1;
+:-moz-placeholder { /*Mozilla Firefox 4 to 18*/
+    color: #758ba3;
 }
-::-moz-placeholder { // Mozilla Firefox 19+
-    color: #0C61E1;
+::-moz-placeholder { /* Mozilla Firefox 19+*/
+    color: #758ba3;
 }
-:-ms-input-placeholder { // Internet Explorer 10+
-    color: #0C61E1;
-}*/
+:-ms-input-placeholder { /*Internet Explorer 10+*/
+    color: #758ba3;
+}
 
 .name{
     float:left;
@@ -50,6 +51,8 @@
     height: 52px;
     margin: 100px 0 0 136px;
     background-image:url(../img/login/inputbg.png);
+
+
 }
 
 .password{
@@ -84,6 +87,8 @@ input[type=text]{
     font-size: 20px;
     font-weight: bold;
     padding-top: 4px;
+    color:#0d8ed2;
+
 }
 
 .system{
