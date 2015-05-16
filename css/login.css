@@ -110,12 +110,13 @@ input[type=text],input[type=password]{
 }
 
 .system .s1{
-    width: 200px;
+    width: 160px;
     height: 28px;
     float: left;
     background-image: url("../img/login/checked.png");
     background-repeat: no-repeat;
     cursor: pointer;
+
 }
 
 .system .s1 .sysname{
@@ -126,7 +127,7 @@ input[type=text],input[type=password]{
     color: #96a4af;
    }
 .system .s2{
-    width: 200px;
+    width: 210px;
     height: 28px;
     float: right;
     background-image: url("../img/login/check.png");
@@ -141,7 +142,9 @@ input[type=text],input[type=password]{
     font-weight: bold;
     color: #96a4af;
 }
-
+ .system label{
+     cursor: pointer;
+ }
 
 
 
