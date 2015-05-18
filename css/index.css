@@ -1,18 +1,18 @@
 .content{
-
+  
 }
 
 .left{
   width:200px;
   float:left;
-  height:1000px;
+  height:768px;
   background-image:url(../img/menu1px.png);
   background-repeat:repeat-y;
   margin-left:-100%;
 }
 
 .left .logo-panel{
-  height:140px;
+  height:148px;
   text-align:center;
   color:#FFF;
 }
@@ -84,7 +84,7 @@
 
 .main{
   margin-left:200px;
-  height:1000px;
+  height:768px;
 }
 
 .main .title{
