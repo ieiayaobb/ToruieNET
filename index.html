@@ -89,7 +89,7 @@
                                 option: {
                                     funnel: {
                                         width: '20%',
-                                        height: '30%',
+                                        height: '20%',
                                         itemStyle : {
                                             normal : {
                                                 label : {
@@ -112,10 +112,10 @@
                     series : [
                         {
                             type : 'pie',
-                            center : ['20%', '50%'],
+                            center : ['20%', '40%'],
                             radius : radius,
-                            y: '55%',   // for funnel
-                            x:'40%', // for funnel
+                            y: '35%',   // for funnel
+                            x: '40%', // for funnel
                             itemStyle : labelFromatter,
                             data : [
                                 {name:'other', value:78, itemStyle : labelBottom},
@@ -124,10 +124,10 @@
                         },
                         {
                             type : 'pie',
-                            center : ['50%', '50%'],
+                            center : ['50%', '40%'],
                             radius : radius,
-                            y: '55%',   // for funnel
-                            x:'60%', // for funnel
+                            y: '35%',   // for funnel
+                            x: '60%', // for funnel
                             itemStyle : labelFromatter,
                             data : [
                                 {name:'other', value:83, itemStyle : labelBottom},
@@ -136,10 +136,10 @@
                         },
                         {
                             type : 'pie',
-                            center : ['80%', '50%'],
+                            center : ['80%', '40%'],
                             radius : radius,
-                            y: '55%',   // for funnel
-                            x:'80%', // for funnel
+                            y: '35%',   // for funnel
+                            x: '80%', // for funnel
                             itemStyle : labelFromatter,
                             data : [
                                 {name:'other', value:89, itemStyle : labelBottom},
@@ -165,7 +165,7 @@
                         data:['蒸发量','降水量']
                     },
                     toolbox: {
-                        show : true,
+                        show : false,
                         feature : {
                             mark : {show: true},
                             dataView : {show: true, readOnly: false},
@@ -236,7 +236,7 @@
                         data:['意向','预购','成交']
                     },
                     toolbox: {
-                        show : true,
+                        show : false,
                         feature : {
                             mark : {show: true},
                             dataView : {show: true, readOnly: false},
@@ -453,13 +453,35 @@
               </div>
               <div class="small-right"></div>
             </div><!-- small-line end -->
-            <!-- <div class="line small-line line-4">
-              <div>
-                <span class="icon"></span>
-                <div class></div>
-              </div>
-              <div></div>
-            </div> -->
+            <div class="line small-line line-4">
+                <div class="small-left"></div>
+                <div class="small-content">
+                    <span class="icon icon-park"></span>
+                    <div class="small-main">
+                        <div class="info">
+                            <span class="info-label">存储主机(<span>69</span>/<span>500</span>)</span>
+                            <div class="info-value">
+                                <div class="bar">
+                                    <div class="bar-left"></div>
+                                    <div class="bar-content"></div>
+                                    <div class="bar-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span class="info-label">存储主机(<span>69</span>/<span>500</span>)</span>
+                            <div class="info-value">
+                                <div class="bar">
+                                    <div class="bar-left"></div>
+                                    <div class="bar-content"></div>
+                                    <div class="bar-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-right"></div>
+            </div>
           </div>
         </div><!-- main end -->
       </div><!-- main-wrap end -->
@@ -492,28 +514,28 @@
               <span class="menu-icon"></span>
               <span class="menu-label">运行管理</span>
             </div>
-            <ul>
-              <div class="menu-level-2">
-                <span class="menu-icon"></span>
-                <span class="menu-label">报警信息</span>
-              </div>
-              <div class="menu-level-2">
-                <span class="menu-icon"></span>
-                <span class="menu-label">消防点布局</span>
-              </div>
-              <div class="menu-level-2">
-                <span class="menu-icon"></span>
-                <span class="menu-label">周界报警</span>
-              </div>
-              <div class="menu-level-2">
-                <span class="menu-icon"></span>
-                <span class="menu-label">综合入侵报警</span>
-              </div>
-              <div class="menu-level-2">
-                <span class="menu-icon"></span>
-                <span class="menu-label">智能分析报警</span>
-              </div>
-            </ul>
+            <!--<ul>-->
+              <!--<div class="menu-level-2">-->
+                <!--<span class="menu-icon"></span>-->
+                <!--<span class="menu-label">报警信息</span>-->
+              <!--</div>-->
+              <!--<div class="menu-level-2">-->
+                <!--<span class="menu-icon"></span>-->
+                <!--<span class="menu-label">消防点布局</span>-->
+              <!--</div>-->
+              <!--<div class="menu-level-2">-->
+                <!--<span class="menu-icon"></span>-->
+                <!--<span class="menu-label">周界报警</span>-->
+              <!--</div>-->
+              <!--<div class="menu-level-2">-->
+                <!--<span class="menu-icon"></span>-->
+                <!--<span class="menu-label">综合入侵报警</span>-->
+              <!--</div>-->
+              <!--<div class="menu-level-2">-->
+                <!--<span class="menu-icon"></span>-->
+                <!--<span class="menu-label">智能分析报警</span>-->
+              <!--</div>-->
+            <!--</ul>-->
           </li>
           <li>
             <div class="menu-level-1">

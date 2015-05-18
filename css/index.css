@@ -3,7 +3,7 @@
 }
 
 .left{
-  width:200px;
+  width:166px;
   float:left;
   height:768px;
   background-image:url(../img/menu1px.png);
@@ -21,13 +21,13 @@
   display:block;
   margin-top:30px;
   float:left;
-  width:200px;
+  width:166px;
 }
 
 .left .sub-name{
   font-size:16px;
   float:left;
-  width:200px;
+  width:166px;
   margin-top:10px;
 }
 
@@ -37,7 +37,7 @@
 
 .left>.menu>li{
   float:left;
-  width:194px;
+  width:166px;
 
   color:#95d6f4;
   font-size:14px;
@@ -51,19 +51,19 @@
 }
 .left>.menu>li>.menu-level-1{
   float:left;
-  width:194px;
+  width:166px;
   height:58px;
 }
 .left>.menu>li>ul{
   float:left;
-  width:195px;
+  width:166px;
   height:229px;
   background-image:url(../img/sub_menu.png)
 }
 
 .menu-level-2{
   float:left;
-  width:194px;
+  width:166px;
   height:58px;
 }
 
@@ -83,16 +83,16 @@
 }
 
 .main{
-  margin-left:200px;
+  margin-left:166px;
   height:768px;
 }
 
 .main .title{
   float:left;
   width:100%;
-  height:96px;
+  height:77px;
   padding-top:5px;
-  background-image:url(../img/title.png);
+  background-image:url(../img/title.jpg);
   background-repeat:repeat-x;
 }
 
@@ -132,33 +132,29 @@
 
 .main .show .line .panel{
   float:left;
-  width:40%;
-  height:314px;
+  width:35%;
+  height:251px;
   background-image:url(../img/panel1px.png);
-  margin-top:10px;
   background-repeat:repeat-x;
 }
 
 .panel-content{
-  height:250px;
+  height:200px;
 }
 
 .main .show .line .panel-left{
   margin-left:20px;
   float:left;
-  width:36px;
-  height:314px;
+  width:63px;
+  height:251px;
   background-image:url(../img/panelleft.png);
-  margin-top:10px;
-
 }
 
 .main .show .line .panel-right{
   float:left;
-  width:32px;
-  height:314px;
+  width:63px;
+  height:251px;
   background-image:url(../img/panelright.png);
-  margin-top:10px;
 }
 
 .main .show .line .panel .panel-title{
@@ -181,21 +177,21 @@
 }
 .bar .bar-left{
   float:left;
-  width:7px;
-  height:9px;
+  width:8px;
+  height:8px;
   background-image:url(../img/redleft.png);
 }
 
 .bar .bar-right{
   float:left;
-  width:7px;
-  height:9px;
+  width:8px;
+  height:8px;
   background-image:url(../img/redright.png);
 }
 .bar .bar-content{
   float:left;
-  width:100px;
-  height:9px;
+  width:80px;
+  height:8px;
   background-image:url(../img/red1px.png);
   background-repeat:repeat-x;
 }
@@ -206,12 +202,10 @@
   background-image:url(../img/indexsmall.png);
 }
 
-
-
 .small-left{
   float:left;
   width:16px;
-  height:118px;
+  height:95px;
   background-image:url(../img/smallbackleft.png);
   margin-left:5px;
 }
@@ -223,39 +217,40 @@
 .small-right{
   float:left;
   width:15px;
-  height:118px;
+  height:95px;
   background-image:url(../img/smallbackright.png);
 }
 
 .small-content{
   float:left;
   width:20%;
-  height:118px;
+  height:95px;
   background-image:url(../img/small1px.png);
 
 }
 
 .icon{
   float:left;
-  width:76px;
-  height:76px;
+  width:64px;
+  height:64px;
   margin-top:20px;
+  background-image: url(../img/icon2.png);
 }
 
 .icon-store{
-  background-image: url(../img/store.png);
+  background-position-y: 0px;
 }
 
 .icon-checkin{
-  background-image: url(../img/checkin.png);
+  background-position-y: 64px;
 }
 
 .icon-lift{
-  background-image: url(../img/lift.png);
+  background-position-y: 128px;
 }
 
 .icon-park{
-  background-image: url(../img/park.png);
+  background-position-y: 192px;
 }
 
 .small-content .info{
@@ -266,7 +261,7 @@
 .small-content .small-main{
   height:76px;
   float:left;
-  width:190px;
+  width:150px;
   margin-top:5px;
 }
 .small-content .info .info-value{
