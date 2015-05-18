@@ -26,6 +26,7 @@
                         'echarts/chart/line' // 使用柱状图就加载line模块，按需加载
                     ],
                     function (ec) {
+                        var color = ['#FF3900','#66D900','#FE9600']
                         // 基于准备好的dom，初始化echarts图表
                         var pieChart = ec.init(document.getElementById('pie'));
 
@@ -54,7 +55,7 @@
                                         baseline: 'top'
                                     }
                                 }
-                            },
+                            }
                         }
                         var labelBottom = {
                             normal: {
@@ -99,7 +100,7 @@
                                                                 baseline: 'middle'
                                                             }
                                                         }
-                                                    },
+                                                    }
                                                 }
                                             }
                                         }
@@ -108,6 +109,7 @@
                                     saveAsImage: {show: true}
                                 }
                             },
+                            color:color,
                             series: [
                                 {
                                     type: 'pie',
@@ -118,7 +120,7 @@
                                     itemStyle: labelFromatter,
                                     data: [
                                         {name: 'other', value: 78, itemStyle: labelBottom},
-                                        {name: 'Messenger', value: 22, itemStyle: labelTop}
+                                        {name: '62kvh', value: 22, itemStyle: labelTop}
                                     ]
                                 },
                                 {
@@ -130,7 +132,7 @@
                                     itemStyle: labelFromatter,
                                     data: [
                                         {name: 'other', value: 83, itemStyle: labelBottom},
-                                        {name: 'Whatsapp', value: 17, itemStyle: labelTop}
+                                        {name: '324kvh', value: 17, itemStyle: labelTop}
                                     ]
                                 },
                                 {
@@ -142,7 +144,7 @@
                                     itemStyle: labelFromatter,
                                     data: [
                                         {name: 'other', value: 89, itemStyle: labelBottom},
-                                        {name: 'Instagram', value: 11, itemStyle: labelTop}
+                                        {name: '123kvh', value: 11, itemStyle: labelTop}
                                     ]
                                 }
                             ]
@@ -173,6 +175,7 @@
                                     saveAsImage: {show: true}
                                 }
                             },
+                            color:color,
                             calculable: true,
                             xAxis: [
                                 {
@@ -234,6 +237,7 @@
                             legend: {
                                 data: ['意向', '预购', '成交']
                             },
+                            color:color,
                             toolbox: {
                                 show: false,
                                 feature: {
@@ -282,6 +286,9 @@
                             ]
                         };
                         areaChart.setOption(areaOption);
+
+                        var stockChart2 = ec.init(document.getElementById('stock2'));
+                        stockChart2.setOption(stockOption);
                     }
             );
         });
@@ -295,11 +302,6 @@
                 <span class="basic"></span>
 
                 <div class="more">
-                    <span class="date">2014年4月29日</span>
-                    <span class="time">19:00:30</span>
-                    <span class="weather">多云转阴</span>
-                    <span class="user">许伟</span>
-                    <span class="profile">*</span>
                 </div>
             </div>
             <div class="show">
@@ -339,7 +341,7 @@
                             <span class="panel-title-icon"></span>
                             <span class="panel-title-label">当前温度</span>
                         </div>
-                        <div class="panel-content"></div>
+                        <div id="stock2" class="panel-content"></div>
                     </div>
                     <div class="panel-right"></div>
                 </div>
@@ -581,9 +583,9 @@
                                         <div class="grey-bar-right"></div>
                                     </div>
                                 </div>
-                                <div class="info-label">故障8</div>
-                                <div class="info-label">布防423</div>
-                                <div class="info-label">20</div>
+                                <div class="info-label text-yellow">故障8</div>
+                                <div class="info-label text-blue">布防423</div>
+                                <div class="info-label background-red">20</div>
                             </div>
                         </div>
                     </div>
@@ -594,7 +596,7 @@
 
                         <div class="large-main">
                             <div class="info">
-                                <div class="info-label">展馆一(<span>69</span>/<span>500</span>)</div>
+                                <div class="info-label">展馆一(<span class="text-yellow">233</span>/<span>500</span>)</div>
                                 <div class="info-value">
                                     <div class="bar-background width120">
                                         <div class="grey-bar-left"></div>
@@ -612,7 +614,7 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <div class="info-label">展馆一(<span>69</span>/<span>500</span>)</div>
+                                <div class="info-label">展馆二(<span class="text-green">69</span>/<span>500</span>)</div>
                                 <div class="info-value">
                                     <div class="bar-background width120">
                                         <div class="grey-bar-left"></div>
@@ -630,7 +632,7 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <div class="info-label">展馆一(<span>69</span>/<span>500</span>)</div>
+                                <div class="info-label">展馆三(<span class="red">452</span>/<span>500</span>)</div>
                                 <div class="info-value">
                                     <div class="bar-background width120">
                                         <div class="grey-bar-left"></div>
@@ -658,8 +660,7 @@
     <!-- main-wrap end -->
     <div class="left">
         <div class="logo-panel">
-            <span class="sys-name">ToruieNET</span>
-            <span class="sub-name">Overview System</span>
+            <span class="weather"></span>
         </div>
         <ul class="menu">
             <li class="active">
@@ -685,40 +686,42 @@
                     <span class="menu-icon"></span>
                     <span class="menu-label">运行管理</span>
                 </div>
-                <div class="menu-level-2-top"></div>
-                <ul>
-                    <li class="menu-level-2-cotent">
-                        <div class="menu-level-2">
-                            <span class="menu-icon"></span>
-                            <span class="menu-label">报警信息</span>
-                        </div>
-                    </li>
-                    <li class="menu-level-2-cotent">
-                        <div class="menu-level-2">
-                            <span class="menu-icon"></span>
-                            <span class="menu-label">消防点布局</span>
-                        </div>
-                    </li>
-                    <li class="menu-level-2-cotent">
-                        <div class="menu-level-2">
-                            <span class="menu-icon"></span>
-                            <span class="menu-label">周界报警</span>
-                        </div>
-                    </li>
-                    <li class="menu-level-2-cotent">
-                        <div class="menu-level-2">
-                            <span class="menu-icon"></span>
-                            <span class="menu-label">综合入侵报警</span>
-                        </div>
-                    </li>
-                    <li class="menu-level-2-cotent">
-                        <div class="menu-level-2">
-                            <span class="menu-icon"></span>
-                            <span class="menu-label">智能分析报警</span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="menu-level-2-bottom"></div>
+                <div class="menu-level-2" style="display:none;">
+                    <div class="menu-level-2-top"></div>
+                    <ul>
+                        <li class="menu-level-2-cotent">
+                            <div class="menu-level-2">
+                                <span class="menu-icon"></span>
+                                <span class="menu-label">报警信息</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div class="menu-level-2">
+                                <span class="menu-icon"></span>
+                                <span class="menu-label">消防点布局</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div class="menu-level-2">
+                                <span class="menu-icon"></span>
+                                <span class="menu-label">周界报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div class="menu-level-2">
+                                <span class="menu-icon"></span>
+                                <span class="menu-label">综合入侵报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div class="menu-level-2">
+                                <span class="menu-icon"></span>
+                                <span class="menu-label">智能分析报警</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-level-2-bottom"></div>
+                </div>
             </li>
             <li>
                 <div class="menu-level-1">

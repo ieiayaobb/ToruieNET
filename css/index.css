@@ -12,7 +12,6 @@
 }
 
 .left .logo-panel{
-  height:148px;
   text-align:center;
   color:#FFF;
 }
@@ -76,7 +75,6 @@
 .main-wrap{
   float:left;
   width:100%;
-  height:1000px;
 }
 
 .main{
@@ -104,9 +102,11 @@
 }
 
 .main .title .more{
-  padding-top:15px;
+  margin:20px 15px 0 0;
   float:right;
-  color:#BEBEBE;
+  width:111px;
+  height:33px;
+  background-image: url(../img/topmenu.png);
 }
 
 .main .title .more .user{
@@ -278,7 +278,7 @@
 
 .big-content{
   float:left;
-  width:38%;
+  width:41%;
   height:95px;
   background-image:url(../img/small1px.png);
 }
@@ -394,4 +394,29 @@
 
 .info-label{
   float:left;
+}
+
+.text-red{
+  color:#FF3900
+}
+
+.text-yellow{
+  color:#FE9600
+}
+
+.text-green{
+  color:#66D900;
+}
+
+.background-red{
+  color:#FFF;
+  background-color: #FF3900;
+}
+
+.weather{
+  width:108px;
+  height:47px;
+  float:left;
+  background-image: url(../img/weather.png);
+  margin: 20px 0 0 20px;
 }
