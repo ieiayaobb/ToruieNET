@@ -203,6 +203,16 @@
     width: 80px ;
     height: 144px;
 }
+.warning ul{
+    width: 90px;
+    height: 144px;
+
+}
+.warning li{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
  .icons{
     float: left;
     width: 48px ;
