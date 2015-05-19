@@ -7,7 +7,14 @@
     <link type="text/css" rel="stylesheet" href="css/login.css" />
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
-
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#login").click(function(){
+               window.location.href = "index.html";
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="main-wrap">
@@ -39,7 +46,7 @@
                 </div>
 
             </div>
-            <div class="landed">
+            <div id="login" class="landed">
                 <input type="button">
             </div>
         </div>

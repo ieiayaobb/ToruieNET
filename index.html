@@ -10,6 +10,14 @@
     <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            $(".menu>li").click(function(){
+                $(".menu>li").removeClass("active");
+                $(this).addClass("active");
+                $(".menu-level-2").hide();
+                $(this).children(".menu-level-2").show();
+            })
+
+
             // 路径配置
             require.config({
                 paths: {
@@ -163,7 +171,7 @@
                                 trigger: 'axis'
                             },
                             legend: {
-                                data: ['蒸发量', '降水量']
+                                data: ['峰值用电', '谷值用电']
                             },
                             toolbox: {
                                 show: false,
@@ -190,7 +198,7 @@
                             ],
                             series: [
                                 {
-                                    name: '蒸发量',
+                                    name: '峰值用电',
                                     type: 'bar',
                                     data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
                                     markPoint: {
@@ -206,7 +214,7 @@
                                     }
                                 },
                                 {
-                                    name: '降水量',
+                                    name: '谷值用电',
                                     type: 'bar',
                                     data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
                                     markPoint: {
@@ -235,7 +243,7 @@
                                 trigger: 'axis'
                             },
                             legend: {
-                                data: ['意向', '预购', '成交']
+                                data: ['进入', '离开', '停留']
                             },
                             color:color,
                             toolbox: {
@@ -263,21 +271,21 @@
                             ],
                             series: [
                                 {
-                                    name: '成交',
+                                    name: '进入',
                                     type: 'line',
                                     smooth: true,
                                     itemStyle: {normal: {areaStyle: {type: 'default'}}},
                                     data: [10, 12, 21, 54, 260, 830, 710]
                                 },
                                 {
-                                    name: '预购',
+                                    name: '离开',
                                     type: 'line',
                                     smooth: true,
                                     itemStyle: {normal: {areaStyle: {type: 'default'}}},
                                     data: [30, 182, 434, 791, 390, 30, 10]
                                 },
                                 {
-                                    name: '意向',
+                                    name: '停留',
                                     type: 'line',
                                     smooth: true,
                                     itemStyle: {normal: {areaStyle: {type: 'default'}}},
@@ -665,57 +673,57 @@
         <ul class="menu">
             <li class="active">
                 <div class="menu-level-1">
-                    <span class="menu-icon"></span>
+                    <span class="menu-icon menu-home"></span>
                     <span class="menu-label">主界面</span>
                 </div>
             </li>
             <li>
                 <div class="menu-level-1">
-                    <span class="menu-icon"></span>
-                    <span class="menu-label">组合安防管理</span>
+                    <span class="menu-icon menu-round"></span>
+                    <span class="menu-label">综合安防管理</span>
                 </div>
             </li>
             <li>
                 <div class="menu-level-1">
-                    <span class="menu-icon"></span>
+                    <span class="menu-icon menu-lightning"></span>
                     <span class="menu-label">报警管理</span>
                 </div>
             </li>
             <li>
                 <div class="menu-level-1">
-                    <span class="menu-icon"></span>
+                    <span class="menu-icon menu-window"></span>
                     <span class="menu-label">运行管理</span>
                 </div>
                 <div class="menu-level-2" style="display:none;">
                     <div class="menu-level-2-top"></div>
                     <ul>
                         <li class="menu-level-2-cotent">
-                            <div class="menu-level-2">
-                                <span class="menu-icon"></span>
+                            <div>
+                                <span class="menu-2-icon"></span>
                                 <span class="menu-label">报警信息</span>
                             </div>
                         </li>
                         <li class="menu-level-2-cotent">
-                            <div class="menu-level-2">
-                                <span class="menu-icon"></span>
+                            <div>
+                                <span class="menu-2-icon"></span>
                                 <span class="menu-label">消防点布局</span>
                             </div>
                         </li>
                         <li class="menu-level-2-cotent">
-                            <div class="menu-level-2">
-                                <span class="menu-icon"></span>
+                            <div>
+                                <span class="menu-2-icon"></span>
                                 <span class="menu-label">周界报警</span>
                             </div>
                         </li>
                         <li class="menu-level-2-cotent">
-                            <div class="menu-level-2">
-                                <span class="menu-icon"></span>
+                            <div>
+                                <span class="menu-2-icon"></span>
                                 <span class="menu-label">综合入侵报警</span>
                             </div>
                         </li>
                         <li class="menu-level-2-cotent">
-                            <div class="menu-level-2">
-                                <span class="menu-icon"></span>
+                            <div>
+                                <span class="menu-2-icon"></span>
                                 <span class="menu-label">智能分析报警</span>
                             </div>
                         </li>
@@ -725,13 +733,13 @@
             </li>
             <li>
                 <div class="menu-level-1">
-                    <span class="menu-icon"></span>
+                    <span class="menu-icon menu-window"></span>
                     <span class="menu-label">设备检测</span>
                 </div>
             </li>
             <li>
                 <div class="menu-level-1">
-                    <span class="menu-icon"></span>
+                    <span class="menu-icon menu-battery"></span>
                     <span class="menu-label">综合能效管理</span>
                 </div>
             </li>

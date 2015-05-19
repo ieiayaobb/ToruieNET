@@ -3,7 +3,7 @@
 }
 
 .left{
-  width:166px;
+  width:160px;
   float:left;
   height:768px;
   background-image:url(../img/menu1px.png);
@@ -31,6 +31,7 @@
 }
 
 .left .menu{
+  float:left;
   margin-top:50px;
 }
 
@@ -46,12 +47,12 @@
 
 .left>.menu>li .menu-icon{
   float:left;
-  margin:20px 0 0 20px;
+  margin:15px 0 0 20px;
 }
 .left>.menu>li>.menu-level-1{
   float:left;
-  width:166px;
-  height:58px;
+  width:155px;
+  height:46px;
 }
 .left>.menu>li>ul{
   float:left;
@@ -65,10 +66,10 @@
 
 .left>.menu>li .menu-label{
   float:left;
-  margin:20px 0 0 15px;
+  margin:15px 0 0 15px;
 }
 
-.left>.menu>li>.menu-level-1:hover{
+.left>.menu>.active>.menu-level-1{
   background-image:url(../img/button_active.png)
 }
 
@@ -78,7 +79,7 @@
 }
 
 .main{
-  margin-left:166px;
+  margin-left:160px;
   height:768px;
 }
 
@@ -249,11 +250,6 @@
   background-repeat:repeat-x;
 }
 
-.menu-icon{
-  width:20px;
-  height:19px;
-}
-
 .small-left{
   float:left;
   width:22px;
@@ -324,7 +320,7 @@
 .small-main{
   height:76px;
   float:left;
-  width:150px;
+  width:60%;
   margin-top:5px;
 }
 
@@ -419,4 +415,38 @@
   float:left;
   background-image: url(../img/weather.png);
   margin: 20px 0 0 20px;
+}
+
+.menu-icon{
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon.png);
+}
+
+.menu-battery{
+  background-position-y: -64px;
+}
+
+.menu-window{
+  background-position-y: -48px;
+}
+
+.menu-lightning{
+  background-position-y: -32px;
+}
+
+.menu-round{
+  background-position-y: -16px;
+}
+
+.menu-home{
+  background-position-y: 0px;
+}
+
+.menu-2-icon{
+  float:left;
+  margin: 18px 0 0 10px;
+  width:25px;
+  height:10px;
+  background-image: url(../img/menu-arrow-white.png);
 }
