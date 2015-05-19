@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>ToruieNET</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/facet.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu>li").click(function(){
+                $(".menu>li").removeClass("active");
+                $(this).addClass("active");
+                $(".menu-level-2").hide();
+                $(this).children(".menu-level-2").show();
+            })
+
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="main-wrap">
+        <div class="main">
+            <div class="title">
+                <span class="basic"></span>
+
+                <div class="more">
+                </div>
+            </div>
+            <div class="show">
+                <div class="panel">
+                    <div class="panel-left"></div>
+                    <div class="panel-middle">
+                        <div class="show-content">
+                            <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
+                            <div class="map"></div>
+                        </div>
+                    </div>
+                    <div class="panel-right"></div>
+                </div>
+                <div class="minipanel">
+                    <div class="minipanel-left"></div>
+                    <div class="minipanel-middle">
+                        <div class="show-content2">
+                            <table>
+                                <tr>
+                                    <th class="time" colspan="2">警报时间</th>
+                                    <th class="place">警报位置</th>
+                                    <th class="detail">内容</th>
+                                    <th class="level">警报级别</th>
+                                    <th class="result">处理情况</th>
+                                </tr>
+                                <tr>
+                                    <td >2015</td>
+                                    <td >19:00:30</td>
+                                    <td>三楼电梯</td>
+                                    <td>消防报警</td>
+                                    <td><div class="level-value level1">一级</div></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>5楼大厅</td>
+                                    <td>侵入报警</td>
+                                    <td><div class="level-value level2">二级</div></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>一楼卫生间</td>
+                                    <td>火焰报警</td>
+                                    <td><div class="level-value level3">三级</div></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="minipanel-right"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- main end -->
+    </div>
+    <!-- main-wrap end -->
+    <div class="left">
+        <div class="logo-panel">
+            <span class="weather"></span>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-home"></span>
+                    <span class="menu-label">主界面</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-round"></span>
+                    <span class="menu-label">综合安防管理</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-lightning"></span>
+                    <span class="menu-label">报警管理</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-window"></span>
+                    <span class="menu-label">运行管理</span>
+                </div>
+                <div class="menu-level-2" style="display:none;">
+                    <div class="menu-level-2-top"></div>
+                    <ul>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">报警信息</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">消防点布局</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">周界报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">综合入侵报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">智能分析报警</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-level-2-bottom"></div>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-window"></span>
+                    <span class="menu-label">设备检测</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-battery"></span>
+                    <span class="menu-label">综合能效管理</span>
+                </div>
+            </li>
+        </ul>
+        <div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
