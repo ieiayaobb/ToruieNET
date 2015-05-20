@@ -224,18 +224,7 @@
 
 
 }
-table{
-    float: left;
-    width: 800px;
-    text-align: center;
-}
-table th{
-    color: #3d82b9;
-    background-color: #d8eaf6;
-}
-table tr{
-    height: 25px;
-}
+
 table .time{
 
 }
@@ -251,15 +240,7 @@ table .level{
 table .result{
     width: 250px;
 }
-table .level-value{
-    margin: auto;
-    color: #FFFFFF;
-    height: 20px;
-    width: 70px;
-    line-height: 20px;
-    border-radius: 5px;
 
-}
 table .level1{
     background-color: #ff5a00;
 }

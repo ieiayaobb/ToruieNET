@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>ToruieNET-Device Detection</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/table.css"/>
+    <link type="text/css" rel="stylesheet" href="css/device-detection.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu>li").click(function(){
+                $(".menu>li").removeClass("active");
+                $(this).addClass("active");
+                $(".menu-level-2").hide();
+                $(this).children(".menu-level-2").show();
+            });
+            $(".title1").click(function(){
+                    $(".content-title").css( "background-position-y","0px");
+                    $(".title2").css("color","#646464");
+                    $(".title1").css("color","#FFFFFF")
+            });
+            $(".title2").click(function(){
+                $(".content-title").css( "background-position-y","32px");
+                $(".title1").css("color","#646464");
+                $(".title2").css("color","#FFFFFF")
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="main-wrap">
+        <div class="main">
+            <div class="title">
+                <span class="basic"></span>
+
+                <div class="more">
+                </div>
+            </div>
+            <div class="show">
+                <div class="panel">
+                    <div class="panel-left"></div>
+                    <div class="panel-middle">
+                        <div class="show-content">
+                            <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
+                            <div class="content-table">
+                                <table>
+                                    <tr>
+                                        <th class="floor">位置</th>
+                                        <th class="site">名称</th>
+                                        <th class="ip">ip地址</th>
+                                        <th class="state">状态</th>
+                                        <th class="num">数量</th>
+                                    </tr>
+                                    <tr class="ood">
+                                        <td>一层</td>
+                                        <td>三楼电梯</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-n">故障</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>二层</td>
+                                        <td>5楼大厅</td>
+                                        <td>192.168.0.20</td>
+                                        <td><div class="state-value state-y">正常</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="ood">
+                                        <td>三层</td>
+                                        <td>一楼卫生间</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-n">故障</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>四层</td>
+                                        <td>四层电梯</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-y">正常</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="ood">
+                                        <td>一层</td>
+                                        <td>三楼电梯</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-n">故障</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>二层</td>
+                                        <td>5楼大厅</td>
+                                        <td>192.168.0.20</td>
+                                        <td><div class="state-value state-y">正常</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="ood">
+                                        <td>三层</td>
+                                        <td>一楼卫生间</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-n">故障</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>四层</td>
+                                        <td>四层电梯</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-y">正常</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="ood">
+                                        <td>一层</td>
+                                        <td>三楼电梯</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-n">故障</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>二层</td>
+                                        <td>5楼大厅</td>
+                                        <td>192.168.0.20</td>
+                                        <td><div class="state-value state-y">正常</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="ood">
+                                        <td>三层</td>
+                                        <td>一楼卫生间</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-n">故障</div></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="even">
+                                        <td>四层</td>
+                                        <td>四层电梯</td>
+                                        <td>192.168.0.2</td>
+                                        <td><div class="state-value state-y">正常</div></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- main end -->
+    </div>
+    <!-- main-wrap end -->
+    <div class="left">
+        <div class="logo-panel">
+            <span class="weather"></span>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-home"></span>
+                    <span class="menu-label">主界面</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-round"></span>
+                    <span class="menu-label">综合安防管理</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-lightning"></span>
+                    <span class="menu-label">报警管理</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-window"></span>
+                    <span class="menu-label">运行管理</span>
+                </div>
+                <div class="menu-level-2" style="display:none;">
+                    <div class="menu-level-2-top"></div>
+                    <ul>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">报警信息</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">消防点布局</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">周界报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">综合入侵报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">智能分析报警</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-level-2-bottom"></div>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-window"></span>
+                    <span class="menu-label">设备检测</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-battery"></span>
+                    <span class="menu-label">综合能效管理</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

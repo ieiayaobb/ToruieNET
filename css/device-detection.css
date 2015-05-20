@@ -123,16 +123,16 @@
 
 .main .show .panel{
     padding-left: 2%;
-     height:602px ;
- }
+    height:602px ;
+}
 
- .panel .panel-left{
+.panel .panel-left{
     float: left;
     width: 25px;
     height: 602px;
     background-image: url("../img/show/panel-left.png");
 }
- .panel .panel-right{
+.panel .panel-right{
     float: left;
     width: 26px;
     height: 602px;
@@ -146,14 +146,10 @@
     background-image: url("../img/show/panel-2px.png");
     background-repeat: repeat-x;
 }
-/*
-.show-content-wrap{
-    width:0;height:0;position:fixed;left:50%;right:50%;
-}
-*/
+
 .panel .panel-middle .show-content{
-    width: 800px;
-    height: 500px;
+    width: 90%;
+    height: 600px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -165,10 +161,12 @@
     text-align: center;
     font-weight: bold;
     background-image: url("../img/show/content-title-background.png");
-    margin-left: 300px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 32px;
     cursor: pointer;
 }
+
 .content-title .title1{
     float: left;
     color: #FFFFFF;
@@ -179,116 +177,13 @@
     color: #646464;
     width: 101px;
 }
-.show-content .map{
-    float: left;
-    width: 500px ;
-    height: 500px;
-    background-image: url("../img/show/map.png");
-}
-.show-content .right{
-    float: left;
-    width:200px ;
-    height: 500px;
-}
-.show-content .right .floor{
-    width: 150px ;
-    height:300px;
-    float: right;
-    background-image: url("../img/show/floor.png");
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    }
-
-.show-content .right .warning{
-    float: right;
-    width: 80px ;
-    height: 144px;
-}
-.warning ul{
-    width: 90px;
-    height: 144px;
-
-}
-.warning li{
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-}
- .icons{
-    float: left;
-    width: 48px ;
-    height: 48px;
-    background-image: url("../img/show/icon.png");
-}
-
- .icon1{
-    background-position-y:0px ;
-}
-.icon2{
-    background-position-y:-48px ;
-}
-.icon3{
-    background-position-y:336px ;
-}
 
 
-.main .show .minipanel{
-    padding-left: 2%;
-    height:155px ;
-}
-.minipanel .minipanel-left{
-     float: left;
-     width: 25px;
-     height: 155px;
-     background-image: url("../img/show/minipanel-left.png");
- }
-.minipanel .minipanel-right{
-    float: left;
-    width: 25px;
-    height: 155px;
-    background-image: url("../img/show/minipanel-right.png");
-}
-
-.minipanel .minipanel-middle{
-    float: left;
-    width: 95%;
-    height: 155px;
-    background-image: url("../img/show/minipanel-2px.png");
-    background-repeat: repeat-x;
-}
-
-.minipanel .minipanel-middle  .show-content2{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    width: 800px;
-    height: 100px;
 
 
+table .state-n{
+     background-color: #ff5a00;
 }
-
-table .time{
-
-}
-table .place{
-    width: 150px;
-}
-table .detail{
-    width: 150px;
-}
-table .level{
-    width: 120px;
-}
-table .result{
-    width: 250px;
-}
-
-table .level1{
-    background-color: #ff5a00;
-}
-table .level2{
-    background-color: #fca204;
-}
-table .level3{
+table .state-y{
     background-color: #6dd011;
 }
