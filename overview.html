@@ -15,7 +15,16 @@
                 $(".menu-level-2").hide();
                 $(this).children(".menu-level-2").show();
             })
-
+            $(".title1").click(function(){
+                $(".content-title").css( "background-position-y","0px");
+                $(".title2").css("color","#646464");
+                $(".title1").css("color","#FFFFFF")
+            });
+            $(".title2").click(function(){
+                $(".content-title").css( "background-position-y","32px");
+                $(".title1").css("color","#646464");
+                $(".title2").css("color","#FFFFFF")
+            });
         });
     </script>
 </head>
@@ -83,7 +92,7 @@
                                     <td>19:00:30</td>
                                     <td>一楼卫生间</td>
                                     <td>火焰报警</td>
-                                    <td><div class="level3">三级</div></td>
+                                    <td><div class="level-value level3">三级</div></td>
                                     <td>&nbsp;</td>
                                 </tr>
                             </table>

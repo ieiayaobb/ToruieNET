@@ -167,6 +167,7 @@
     background-image: url("../img/show/content-title-background.png");
     margin-left: 300px;
     line-height: 32px;
+    cursor: pointer;
 }
 .content-title .title1{
     float: left;
