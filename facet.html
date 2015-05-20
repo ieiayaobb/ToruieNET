@@ -14,7 +14,17 @@
                 $(this).addClass("active");
                 $(".menu-level-2").hide();
                 $(this).children(".menu-level-2").show();
-            })
+            });
+            $(".title1").click(function(){
+                    $(".content-title").css( "background-position-y","0px");
+                    $(".title2").css("color","#646464");
+                    $(".title1").css("color","#FFFFFF")
+            });
+            $(".title2").click(function(){
+                $(".content-title").css( "background-position-y","32px");
+                $(".title1").css("color","#646464");
+                $(".title2").css("color","#FFFFFF")
+            });
 
         });
     </script>
@@ -35,7 +45,7 @@
                     <div class="panel-middle">
                         <div class="show-content">
                             <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
-                            <div class="map"></div>
+                            <div class="main-img"></div>
                         </div>
                     </div>
                     <div class="panel-right"></div>

@@ -152,8 +152,8 @@
 }
 */
 .panel .panel-middle .show-content{
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 600px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -168,7 +168,9 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 32px;
+    cursor: pointer;
 }
+
 .content-title .title1{
     float: left;
     color: #FFFFFF;
@@ -179,11 +181,12 @@
     color: #646464;
     width: 101px;
 }
-.show-content .map{
+.show-content .main-img{
     float: left;
-    width: 500px ;
-    height: 500px;
-    background-image: url("../img/show/map.png");
+    width: 700px ;
+    height: 383px;
+    background-image: url("../img/show/yuanqu.jpg");
+    margin-top: 50px;
 }
 
 
