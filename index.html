@@ -4,13 +4,14 @@
     <meta charset="utf-8"/>
     <title>ToruieNET</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
     <link type="text/css" rel="stylesheet" href="css/index.css"/>
     <script type="text/javascript" src="js/echarts-all.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".menu>li").click(function(){
+            $(".menu>li").click(function () {
                 $(".menu>li").removeClass("active");
                 $(this).addClass("active");
                 $(".menu-level-2").hide();
@@ -34,7 +35,7 @@
                         'echarts/chart/line' // 使用柱状图就加载line模块，按需加载
                     ],
                     function (ec) {
-                        var color = ['#FF3900','#66D900','#FE9600']
+                        var color = ['#FF3900', '#66D900', '#FE9600']
                         // 基于准备好的dom，初始化echarts图表
                         var pieChart = ec.init(document.getElementById('pie'));
 
@@ -117,7 +118,7 @@
                                     saveAsImage: {show: true}
                                 }
                             },
-                            color:color,
+                            color: color,
                             series: [
                                 {
                                     type: 'pie',
@@ -183,7 +184,7 @@
                                     saveAsImage: {show: true}
                                 }
                             },
-                            color:color,
+                            color: color,
                             calculable: true,
                             xAxis: [
                                 {
@@ -245,7 +246,7 @@
                             legend: {
                                 data: ['进入', '离开', '停留']
                             },
-                            color:color,
+                            color: color,
                             toolbox: {
                                 show: false,
                                 feature: {
@@ -361,6 +362,7 @@
                         <div class="small-main">
                             <div class="info">
                                 <span class="info-label">存储主机(<span>69</span>/<span>500</span>)</span>
+
                                 <div class="info-value">
                                     <div class="bar-background">
                                         <div class="grey-bar-left"></div>
@@ -406,6 +408,7 @@
                                     <span>开启(<span>36</span>)</span>)
                                     <span>关闭(<span>14</span>)</span>)
                                 </span>
+
                                 <div class="info-value">
                                     <div class="bar-background">
                                         <div class="grey-bar-left"></div>
@@ -543,6 +546,7 @@
                             </div>
                             <div class="info">
                                 <span class="info-label">消防点位(<span>69</span>/<span>500</span>)</span>
+
                                 <div class="info-value">
                                     <div class="bar-background width120">
                                         <div class="grey-bar-left"></div>
@@ -744,9 +748,7 @@
                 </div>
             </li>
         </ul>
-        <div>
-        </div>
     </div>
-    </div>
+</div>
 </body>
 </html>
