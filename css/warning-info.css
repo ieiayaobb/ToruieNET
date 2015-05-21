@@ -1,0 +1,66 @@
+.show .panel{
+    height: 443px;
+    background-image: url("../img/show/panel3-2px.png");
+}
+.panel  .panel-wrap{
+    height: 443px;
+}
+.panel-left{
+    height: 443px;
+    width: 34px;
+    background-image: url("../img/show/panel3-left.png");
+}
+.panel-right{
+    height: 443px;
+    width: 34px;
+    margin-left: -34px;
+    background-image: url("../img/show/panel3-right.png");
+}
+.show .panel2{
+    height: 302px;
+    background-image: url("../img/show/panel2-2px.png");
+}
+.panel  .panel2-wrap{
+    height: 302px;
+}
+.panel2-left{
+    height: 302px;
+    width: 32px;
+    background-image: url("../img/show/panel2-left.png");
+}
+.panel2-right{
+    height: 302px;
+    width: 32px;
+    margin-left: -32px;
+    background-image: url("../img/show/panel2-right.png");
+}
+table .level1{
+    background-color: #ff5a00;
+}
+table .level2{
+    background-color: #fca204;
+}
+table .level3{
+    background-color: #6dd011;
+}
+table .floor{
+    width: 20%;
+}
+table .site{
+    width: 20%;
+}
+table .ip{
+    width: 20%;
+}
+table .state{
+    width: 20%;
+}
+table .num{
+    width: 20%;
+}
+.panel-content .content-title2{
+    color: #646464;
+    background-image: url("../img/show/content-title-background2.png");
+    margin-bottom: 10px;
+
+}

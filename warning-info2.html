@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/common.css"/>
     <link type="text/css" rel="stylesheet" href="css/panel.css"/>
     <link type="text/css" rel="stylesheet" href="css/table.css"/>
-    <link type="text/css" rel="stylesheet" href="css/device-detection.css"/>
+    <link type="text/css" rel="stylesheet" href="css/warning-info2.css"/>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -18,9 +18,9 @@
                 $(this).children(".menu-level-2").show();
             });
             $(".title1").click(function(){
-                    $(".content-title").css( "background-position-y","0px");
-                    $(".title2").css("color","#646464");
-                    $(".title1").css("color","#FFFFFF")
+                $(".content-title").css( "background-position-y","0px");
+                $(".title2").css("color","#646464");
+                $(".title1").css("color","#FFFFFF")
             });
             $(".title2").click(function(){
                 $(".content-title").css( "background-position-y","32px");
@@ -42,103 +42,141 @@
                 </div>
             </div>
             <div class="show">
+                <!--show panel-2-->
+                <div class="panel panel2">
+                    <div class="panel-wrap panel2-wrap">
+                        <div class="panel-content panel2-content">
+                            <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
+
+
+                        </div>
+                    </div>
+                    <div class="panel-left panel2-left"></div>
+                    <div class="panel-right panel2-right"></div>
+                </div>
+
+
+                <!--show panel-1-->
                 <div class="panel">
                     <div class="panel-wrap">
                         <div class="panel-content">
-                            <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
+                            <div class="content-title content-title2"><div>信息查询</div></div>
 
                             <table>
                                 <tr>
-                                    <th class="floor">位置</th>
-                                    <th class="site">名称</th>
-                                    <th class="ip">ip地址</th>
-                                    <th class="state">状态</th>
-                                    <th class="num">数量</th>
+                                    <th class="time" colspan="2">警报时间</th>
+                                    <th class="place">警报位置</th>
+                                    <th class="detail">内容</th>
+                                    <th class="level">警报级别</th>
+                                    <th class="result">处理情况</th>
                                 </tr>
                                 <tr class="ood">
-                                    <td>一层</td>
+                                    <td >2015</td>
+                                    <td >19:00:30</td>
                                     <td>三楼电梯</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-n">故障</div></td>
-                                    <td></td>
+                                    <td>消防报警</td>
+                                    <td><div class="state-value level2">一级</div></td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr class="even">
-                                    <td>二层</td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
                                     <td>5楼大厅</td>
-                                    <td>192.168.0.20</td>
-                                    <td><div class="state-value state-y">正常</div></td>
-                                    <td></td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level3">二级</div></td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr class="ood">
-                                    <td>三层</td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
                                     <td>一楼卫生间</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-n">故障</div></td>
-                                    <td></td>
-                                </tr>
+                                    <td>火焰报警</td>
+                                    <td><div class="state-value level4">一般</div></td>
+                                    <td>&nbsp;</td>
                                 <tr class="even">
-                                    <td>四层</td>
-                                    <td>四层电梯</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-y">正常</div></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="ood">
-                                    <td>一层</td>
-                                    <td>三楼电梯</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-n">故障</div></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="even">
-                                    <td>二层</td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
                                     <td>5楼大厅</td>
-                                    <td>192.168.0.20</td>
-                                    <td><div class="state-value state-y">正常</div></td>
-                                    <td></td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level2">一级</div></td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr class="ood">
-                                    <td>三层</td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
                                     <td>一楼卫生间</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-n">故障</div></td>
-                                    <td></td>
-                                </tr>
+                                    <td>火焰报警</td>
+                                    <td><div class="state-value level1">特级</div></td>
+                                    <td>&nbsp;</td>
                                 <tr class="even">
-                                    <td>四层</td>
-                                    <td>四层电梯</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-y">正常</div></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="ood">
-                                    <td>一层</td>
-                                    <td>三楼电梯</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-n">故障</div></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="even">
-                                    <td>二层</td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
                                     <td>5楼大厅</td>
-                                    <td>192.168.0.20</td>
-                                    <td><div class="state-value state-y">正常</div></td>
-                                    <td></td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level3">二级</div></td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr class="ood">
-                                    <td>三层</td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
                                     <td>一楼卫生间</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-n">故障</div></td>
-                                    <td></td>
-                                </tr>
+                                    <td>火焰报警</td>
+                                    <td><div class="state-value level4">一般</div></td>
+                                    <td>&nbsp;</td>
                                 <tr class="even">
-                                    <td>四层</td>
-                                    <td>四层电梯</td>
-                                    <td>192.168.0.2</td>
-                                    <td><div class="state-value state-y">正常</div></td>
-                                    <td></td>
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>5楼大厅</td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level2">一级</div></td>
+                                    <td>&nbsp;</td>
                                 </tr>
+                                <tr class="ood">
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>一楼卫生间</td>
+                                    <td>火焰报警</td>
+                                    <td><div class="state-value level1">特级</div></td>
+                                    <td>&nbsp;</td>
+                                <tr class="even">
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>5楼大厅</td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level3">二级</div></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>一楼卫生间</td>
+                                    <td>火焰报警</td>
+                                    <td><div class="state-value level4">一般</div></td>
+                                    <td>&nbsp;</td>
+                                <tr class="even">
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>5楼大厅</td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level1">特级</div></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>一楼卫生间</td>
+                                    <td>火焰报警</td>
+                                    <td><div class="state-value level4">一般</div></td>
+                                    <td>&nbsp;</td>
+                                <tr class="even">
+                                    <td>2015</td>
+                                    <td>19:00:30</td>
+                                    <td>5楼大厅</td>
+                                    <td>侵入报警</td>
+                                    <td><div class="state-value level3">二级</div></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
                             </table>
 
                         </div>
