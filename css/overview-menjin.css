@@ -1,0 +1,57 @@
+.content{
+
+}
+
+.pictures .map{
+    float: left;
+    width: 500px ;
+    height: 500px;
+    background-image: url("../img/show/map.png");
+
+}
+.pictures .right{
+    float: left;
+    width:200px ;
+    height: 500px;
+}
+.pictures .right .floor{
+    width: 150px ;
+    height:300px;
+    float: right;
+    background-image: url("../img/show/floor.png");
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    }
+
+.pictures .right .warning{
+    float: right;
+    width: 80px ;
+    height: 144px;
+}
+.warning ul{
+    width: 90px;
+    height: 144px;
+
+}
+.warning li{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+ .icons{
+    float: left;
+    width: 48px ;
+    height: 48px;
+    background-image: url("../img/show/icon.png");
+}
+
+ .icon1{
+    background-position-y:0px ;
+}
+.icon2{
+    background-position-y:-48px ;
+}
+.icon3{
+    background-position-y:336px ;
+}
+

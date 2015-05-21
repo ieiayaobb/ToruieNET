@@ -1,10 +1,39 @@
-.content{
-
+.show .panel{
+    height: 443px;
+    background-image: url("../img/show/panel3-2px.png");
 }
-
+.panel  .panel-wrap{
+    height: 443px;
+}
+.panel-left{
+    height: 443px;
+    width: 34px;
+    background-image: url("../img/show/panel3-left.png");
+}
+.panel-right{
+    height: 443px;
+    width: 34px;
+    margin-left: -34px;
+    background-image: url("../img/show/panel3-right.png");
+}
 table .state-n{
      background-color: #ff5a00;
 }
 table .state-y{
     background-color: #6dd011;
+}
+table .floor{
+    width: 20%;
+ }
+table .site{
+    width: 20%;
+}
+table .ip{
+    width: 20%;
+}
+table .state{
+    width: 20%;
+}
+table .num{
+    width: 20%;
 }

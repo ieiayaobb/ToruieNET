@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>ToruieNET</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/panel.css"/>
+    <link type="text/css" rel="stylesheet" href="css/overview-wendu.css"/>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu>li").click(function(){
+                $(".menu>li").removeClass("active");
+                $(this).addClass("active");
+                $(".menu-level-2").hide();
+                $(this).children(".menu-level-2").show();
+            });
+            $(".title1").click(function(){
+                $(".content-title").css( "background-position-y","0px");
+                $(".title2").css("color","#646464");
+                $(".title1").css("color","#FFFFFF")
+            });
+            $(".title2").click(function(){
+                $(".content-title").css( "background-position-y","32px");
+                $(".title1").css("color","#646464");
+                $(".title2").css("color","#FFFFFF")
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="main-wrap">
+        <div class="main">
+            <div class="title">
+                <span class="basic"></span>
+
+                <div class="more">
+                </div>
+            </div>
+            <div class="show">
+
+                <!--show panel-1-->
+                <div class="panel">
+                    <div class="panel-wrap">
+                        <div class="panel-content">
+                            <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
+                            <div class="pictures">
+                                <div class="map"></div>
+                                <div class="right">
+                                    <div class="floor"></div>
+                                    <div class="warning">
+                                        <ul>
+                                            <li><span class="icons icon1"></span><span>门禁</span></li>
+                                            <li><span class="icons icon2"></span><span>监控</span></li>
+                                            <li><span class="icons icon3"></span><span>报警</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-left"></div>
+                    <div class="panel-right"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- main end -->
+    </div>
+    <!-- main-wrap end -->
+    <div class="left">
+        <div class="logo-panel">
+            <span class="weather"></span>
+        </div>
+        <ul class="menu">
+            <li class="active">
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-home"></span>
+                    <span class="menu-label">主界面</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-round"></span>
+                    <span class="menu-label">综合安防管理</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-lightning"></span>
+                    <span class="menu-label">报警管理</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-window"></span>
+                    <span class="menu-label">运行管理</span>
+                </div>
+                <div class="menu-level-2" style="display:none;">
+                    <div class="menu-level-2-top"></div>
+                    <ul>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">报警信息</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">消防点布局</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">周界报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">综合入侵报警</span>
+                            </div>
+                        </li>
+                        <li class="menu-level-2-cotent">
+                            <div>
+                                <span class="menu-2-icon"></span>
+                                <span class="menu-label">智能分析报警</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-level-2-bottom"></div>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-window"></span>
+                    <span class="menu-label">设备检测</span>
+                </div>
+            </li>
+            <li>
+                <div class="menu-level-1">
+                    <span class="menu-icon menu-battery"></span>
+                    <span class="menu-label">综合能效管理</span>
+                </div>
+            </li>
+        </ul>
+        <div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
