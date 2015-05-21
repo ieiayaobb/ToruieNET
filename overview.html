@@ -5,8 +5,10 @@
     <title>ToruieNET</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="css/common.css"/>
-    <link type="text/css" rel="stylesheet" href="css/overview.css"/>
+    <link type="text/css" rel="stylesheet" href="css/panel.css"/>
     <link type="text/css" rel="stylesheet" href="css/table.css"/>
+    <link type="text/css" rel="stylesheet" href="css/overview.css"/>
+
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -15,7 +17,7 @@
                 $(this).addClass("active");
                 $(".menu-level-2").hide();
                 $(this).children(".menu-level-2").show();
-            })
+            });
             $(".title1").click(function(){
                 $(".content-title").css( "background-position-y","0px");
                 $(".title2").css("color","#646464");
@@ -40,30 +42,35 @@
                 </div>
             </div>
             <div class="show">
+
+                <!--show panel-1-->
                 <div class="panel">
-                    <div class="panel-left"></div>
-                    <div class="panel-middle">
-                        <div class="show-content">
-                        <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
-                        <div class="map"></div>
-                        <div class="right">
-                            <div class="floor"></div>
-                            <div class="warning">
-                                <ul>
-                                    <li><span class="icons icon1"></span><span>门禁</span></li>
-                                    <li><span class="icons icon2"></span><span>监控</span></li>
-                                    <li><span class="icons icon3"></span><span>报警</span></li>
-                                </ul>
+                    <div class="panel-wrap">
+                        <div class="panel-content">
+                            <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
+                            <div class="pictures">
+                                <div class="map"></div>
+                                <div class="right">
+                                    <div class="floor"></div>
+                                    <div class="warning">
+                                        <ul>
+                                            <li><span class="icons icon1"></span><span>门禁</span></li>
+                                            <li><span class="icons icon2"></span><span>监控</span></li>
+                                            <li><span class="icons icon3"></span><span>报警</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    </div>
+                    <div class="panel-left"></div>
                     <div class="panel-right"></div>
                 </div>
-                <div class="minipanel">
-                    <div class="minipanel-left"></div>
-                    <div class="minipanel-middle">
-                        <div class="show-content2">
+
+                <!--show panel-2-->
+                <div class="panel panel2">
+                    <div class="panel-wrap panel2-wrap">
+                        <div class="panel-content panel2-content">
                             <table>
                                 <tr>
                                     <th class="time" colspan="2">警报时间</th>
@@ -99,10 +106,9 @@
                             </table>
                         </div>
                     </div>
-                    <div class="minipanel-right"></div>
+                    <div class="panel-left panel2-left"></div>
+                    <div class="panel-right panel2-right"></div>
                 </div>
-
-
             </div>
         </div>
         <!-- main end -->
