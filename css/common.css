@@ -168,8 +168,14 @@
 
 .menu-level-2-cotent{
     width:156px;
-    height:60px;
+    height:45px;
     background-image: url(../img/menu-2-background.png);
     float:left;
+}
+
+.menu-level-2-divide{
+    width:147px;
+    height:2px;
+    background-image: url(../img/menu-2-divide.png);
 }
 
