@@ -5,8 +5,10 @@
     <title>ToruieNET</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/panel.css"/>
     <link type="text/css" rel="stylesheet" href="css/table.css"/>
     <link type="text/css" rel="stylesheet" href="css/facet.css"/>
+
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -17,16 +19,15 @@
                 $(this).children(".menu-level-2").show();
             });
             $(".title1").click(function(){
-                    $(".content-title").css( "background-position-y","0px");
-                    $(".title2").css("color","#646464");
-                    $(".title1").css("color","#FFFFFF")
+                $(".content-title").css( "background-position-y","0px");
+                $(".title2").css("color","#646464");
+                $(".title1").css("color","#FFFFFF")
             });
             $(".title2").click(function(){
                 $(".content-title").css( "background-position-y","32px");
                 $(".title1").css("color","#646464");
                 $(".title2").css("color","#FFFFFF")
             });
-
         });
     </script>
 </head>
@@ -41,20 +42,25 @@
                 </div>
             </div>
             <div class="show">
+
+                <!--show panel-1-->
                 <div class="panel">
-                    <div class="panel-left"></div>
-                    <div class="panel-middle">
-                        <div class="show-content">
+                    <div class="panel-wrap">
+                        <div class="panel-content">
                             <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
-                            <div class="main-img"></div>
+                            <div class="pictures">
+                                <div class="picture-1"></div>
+                            </div>
                         </div>
                     </div>
+                    <div class="panel-left"></div>
                     <div class="panel-right"></div>
                 </div>
-                <div class="minipanel">
-                    <div class="minipanel-left"></div>
-                    <div class="minipanel-middle">
-                        <div class="show-content2">
+
+                <!--show panel-2-->
+                <div class="panel panel2">
+                    <div class="panel-wrap panel2-wrap">
+                        <div class="panel-content panel2-content">
                             <table>
                                 <tr>
                                     <th class="time" colspan="2">警报时间</th>
@@ -63,7 +69,7 @@
                                     <th class="level">警报级别</th>
                                     <th class="result">处理情况</th>
                                 </tr>
-                                <tr>
+                                <tr class="ood">
                                     <td >2015</td>
                                     <td >19:00:30</td>
                                     <td>三楼电梯</td>
@@ -79,7 +85,7 @@
                                     <td><div class="state-value level2">二级</div></td>
                                     <td>&nbsp;</td>
                                 </tr>
-                                <tr>
+                                <tr class="ood">
                                     <td>2015</td>
                                     <td>19:00:30</td>
                                     <td>一楼卫生间</td>
@@ -90,10 +96,9 @@
                             </table>
                         </div>
                     </div>
-                    <div class="minipanel-right"></div>
+                    <div class="panel-left panel2-left"></div>
+                    <div class="panel-right panel2-right"></div>
                 </div>
-
-
             </div>
         </div>
         <!-- main end -->
@@ -177,6 +182,8 @@
                 </div>
             </li>
         </ul>
+        <div>
+        </div>
     </div>
 </div>
 </body>

@@ -5,6 +5,7 @@
     <title>ToruieNET-Device Detection</title>
     <link type="text/css" rel="stylesheet" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/panel.css"/>
     <link type="text/css" rel="stylesheet" href="css/table.css"/>
     <link type="text/css" rel="stylesheet" href="css/device-detection.css"/>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
@@ -42,107 +43,107 @@
             </div>
             <div class="show">
                 <div class="panel">
-                    <div class="panel-left"></div>
-                    <div class="panel-middle">
-                        <div class="show-content">
+                    <div class="panel-wrap">
+                        <div class="panel-content">
                             <div class="content-title"><div class="title1">实时报警</div><div class="title2">历史报警</div></div>
-                            <div class="content-table">
-                                <table>
-                                    <tr>
-                                        <th class="floor">位置</th>
-                                        <th class="site">名称</th>
-                                        <th class="ip">ip地址</th>
-                                        <th class="state">状态</th>
-                                        <th class="num">数量</th>
-                                    </tr>
-                                    <tr class="ood">
-                                        <td>一层</td>
-                                        <td>三楼电梯</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-n">故障</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>二层</td>
-                                        <td>5楼大厅</td>
-                                        <td>192.168.0.20</td>
-                                        <td><div class="state-value state-y">正常</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="ood">
-                                        <td>三层</td>
-                                        <td>一楼卫生间</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-n">故障</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>四层</td>
-                                        <td>四层电梯</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-y">正常</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="ood">
-                                        <td>一层</td>
-                                        <td>三楼电梯</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-n">故障</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>二层</td>
-                                        <td>5楼大厅</td>
-                                        <td>192.168.0.20</td>
-                                        <td><div class="state-value state-y">正常</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="ood">
-                                        <td>三层</td>
-                                        <td>一楼卫生间</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-n">故障</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>四层</td>
-                                        <td>四层电梯</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-y">正常</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="ood">
-                                        <td>一层</td>
-                                        <td>三楼电梯</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-n">故障</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>二层</td>
-                                        <td>5楼大厅</td>
-                                        <td>192.168.0.20</td>
-                                        <td><div class="state-value state-y">正常</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="ood">
-                                        <td>三层</td>
-                                        <td>一楼卫生间</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-n">故障</div></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="even">
-                                        <td>四层</td>
-                                        <td>四层电梯</td>
-                                        <td>192.168.0.2</td>
-                                        <td><div class="state-value state-y">正常</div></td>
-                                        <td></td>
-                                    </tr>
-                                </table>
-                            </div>
+
+                            <table>
+                                <tr>
+                                    <th class="floor">位置</th>
+                                    <th class="site">名称</th>
+                                    <th class="ip">ip地址</th>
+                                    <th class="state">状态</th>
+                                    <th class="num">数量</th>
+                                </tr>
+                                <tr class="ood">
+                                    <td>一层</td>
+                                    <td>三楼电梯</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-n">故障</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="even">
+                                    <td>二层</td>
+                                    <td>5楼大厅</td>
+                                    <td>192.168.0.20</td>
+                                    <td><div class="state-value state-y">正常</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>三层</td>
+                                    <td>一楼卫生间</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-n">故障</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="even">
+                                    <td>四层</td>
+                                    <td>四层电梯</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-y">正常</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>一层</td>
+                                    <td>三楼电梯</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-n">故障</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="even">
+                                    <td>二层</td>
+                                    <td>5楼大厅</td>
+                                    <td>192.168.0.20</td>
+                                    <td><div class="state-value state-y">正常</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>三层</td>
+                                    <td>一楼卫生间</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-n">故障</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="even">
+                                    <td>四层</td>
+                                    <td>四层电梯</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-y">正常</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>一层</td>
+                                    <td>三楼电梯</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-n">故障</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="even">
+                                    <td>二层</td>
+                                    <td>5楼大厅</td>
+                                    <td>192.168.0.20</td>
+                                    <td><div class="state-value state-y">正常</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="ood">
+                                    <td>三层</td>
+                                    <td>一楼卫生间</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-n">故障</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="even">
+                                    <td>四层</td>
+                                    <td>四层电梯</td>
+                                    <td>192.168.0.2</td>
+                                    <td><div class="state-value state-y">正常</div></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
                         </div>
                     </div>
+                    <div class="panel-left"></div>
                     <div class="panel-right"></div>
                 </div>
             </div>
