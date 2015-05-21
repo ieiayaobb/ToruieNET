@@ -2,13 +2,6 @@
 
 }
 
-.panel .panel-content .pictures{
-    width: 800px;
-    height: 500px;
-    float: left;
-    margin-left: 50px;
-    margin-right: auto;
-}
 .pictures .map{
     float: left;
     width: 500px ;

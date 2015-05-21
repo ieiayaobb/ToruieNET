@@ -2,13 +2,7 @@
 
 }
 
-.panel .panel-content .pictures{
-    width: 800px;
-    height: 500px;
-    float: left;
-    margin-left: 50px;
-    margin-right: auto;
-}
+
 .pictures .picture-1{
     float: left;
     width: 700px ;
