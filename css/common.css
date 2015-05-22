@@ -179,3 +179,8 @@
     background-image: url(../img/menu-2-divide.png);
 }
 
+.menu a{
+    color:#95d6f4;
+    text-decoration: none;
+}
+
